@@ -1,26 +1,21 @@
-* {
+const string = `.skin * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-*::before,
-*::before {
+.skin *::before,
+.skin *::before {
   box-sizing: border-box;
 }
 
 body {
   background: #ffe500;
-  min-height: 100hv;
 }
 
 .skin {
+  min-height: 50hv;
   position: relative;
 }
-
-.skin {
-  position: relative;
-}
-
 .nose {
   position: absolute;
   border: 10px solid black;
@@ -31,7 +26,6 @@ body {
   margin-left: -10px;
   z-index: 10;
 }
-
 @keyframes shake {
   0% {
     transform: rotate(0deg);
@@ -47,7 +41,8 @@ body {
   }
 }
 .nose:hover {
-  animation: shake 300ms infinite linear;
+  transform-origin: center bottom;
+  animation: shake 250ms infinite linear;
 }
 .eye {
   border: 4px solid #000;
@@ -60,7 +55,6 @@ body {
   margin-left: -32px;
   background: #2e2e2e;
 }
-
 .eye::before {
   content: '';
   display: block;
@@ -72,15 +66,12 @@ body {
   position: relative;
   left: 8px;
 }
-
 .eye.left {
   transform: translateX(-100px);
 }
-
 .eye.right {
   transform: translateX(100px);
 }
-
 .mouth {
   position: absolute;
   width: 200px;
@@ -89,7 +80,6 @@ body {
   top: 170px;
   margin-left: -100px;
 }
-
 .mouth .up {
   position: relative;
   top: -20px;
@@ -111,12 +101,10 @@ body {
   border-radius: 0 0 0 50px;
   transform: rotate(-15deg) translateX(-53px);
 }
-
 .mouth .up .lip.right {
   border-radius: 0 0 50px 0;
   transform: rotate(15deg) translateX(53px);
 }
-
 .mouth .up .lip::before {
   position: absolute;
   content: '';
@@ -151,7 +139,6 @@ body {
   background: #9b000a;
   overflow: hidden;
 }
-
 .mouth .down .yuan1 .yuan2 {
   position: absolute;
   background: #ff4760;
@@ -163,7 +150,6 @@ body {
   margin-left: -90px;
   border-radius: 100px;
 }
-
 .face {
   position: absolute;
   left: 50%;
@@ -181,4 +167,6 @@ body {
 }
 .face.right {
   transform: translateX(180px);
-}
+}`
+
+export default string
