@@ -5,10 +5,10 @@
   "devDependencies": {
     "cssnano": "^5.0.9"
   },
-  "name": "nav",
+  "name": "pikachu",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:heycn/nav.git",
+  "repository": "git@github.com:heycn/pikachu.git",
   "author": "heycn <x1chennan@qq.com>",
   "license": "MIT"
 }
