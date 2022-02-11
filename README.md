@@ -17,3 +17,10 @@ parcel src/index.html
 ```
 yarn build
 ```
+
+## 一键部署
+
+```
+yarn deploy
+
+```
